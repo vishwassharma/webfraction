@@ -1,0 +1,101 @@
+<webfraction>
+    <credentials>
+        <username>
+            yourusername
+        </username>
+        <password>
+            yourpassword
+        </password>
+    </credentials>
+    <domain>
+        <value>domainname.com</value>
+        <subdomain>
+            <value>www</value>
+        </subdomain>
+        <subdomain>
+            <value>dev</value>
+        </subdomain>
+        <subdomain>
+            <value>static</value>
+        </subdomain>
+    </domain>
+    <databases>
+        <database>
+            <!--mysql or postgresql-->
+            <type>postgresql</type>
+            <value>username_databasename</value>
+            <password>database_password</password>
+        </database>
+    </databases>
+    <apps>
+        <app>
+            <value>application_name</value>
+            <!--Get more such application from https://my.webfaction.com/app_type/list-->
+            <type>django14_mw33_27</type>
+            <autostart>False</autostart>
+            <extra_info>None</extra_info>
+        </app>
+        <app>
+            <value>static_applicationname</value>
+            <!--Get more such application from https://my.webfaction.com/app_type/list-->
+            <type>static_only</type>
+            <autostart>False</autostart>
+            <extra_info>None</extra_info>
+            <!--expires max-->
+        </app>
+        <app>
+            <value>development_application_name</value>
+            <!--Get more such application from https://my.webfaction.com/app_type/list-->
+            <type>django14_mw33_27</type>
+            <autostart>False</autostart>
+            <extra_info>None</extra_info>
+        </app>
+    </apps>
+    <websites>
+        <website>
+            <value>website_name</value>
+            <ip>85.17.88.169</ip>
+            <https>False</https>
+            <subdomains>
+                <subdomain><value>domainname</value></subdomain>
+                <subdomain><value>www.domainname</value></subdomain>
+            </subdomains>
+            <apps>
+                <app>
+                    <value>application_name</value>
+                    <uri>/</uri>
+                </app>
+            </apps>
+        </website>
+        <website>
+            <value>static_website_name</value>
+            <ip>85.17.88.169</ip>
+            <https>False</https>
+            <subdomains>
+                <subdomain>
+                    <value>static_domain_name</value></subdomain>
+            </subdomains>
+            <apps>
+                <app>
+                    <value>static_application_name</value>
+                    <uri>/</uri>
+                </app>
+            </apps>
+        </website>
+        <website>
+            <value>development website name</value>
+            <ip>85.17.88.169</ip>
+            <https>False</https>
+            <subdomains>
+                <subdomain><value>dev.domain_name.com</value></subdomain>
+            </subdomains>
+            <apps>
+                <app>
+                    <value>development applicaiton name</value>
+                    <uri>/</uri>
+                </app>
+            </apps>
+        </website>
+    </websites>
+</webfraction>
+
