@@ -24,13 +24,13 @@ If you want only to setup database you can comment out rest of the function call
 
 ```python
 def main():
-"""docstring for main"""
-#soup = BeautifulSoup(open("config.xml"))
-w = Webfraction()
-w.create_domain()
-w.create_apps()
-w.create_websites()
-w.create_databases()
+    """docstring for main"""
+    #soup = BeautifulSoup(open("config.xml"))
+    w = Webfraction()
+    w.create_domain()
+    w.create_apps()
+    w.create_websites()
+    w.create_databases()
 ```
 
     python webfraction.py
